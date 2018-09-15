@@ -1,13 +1,9 @@
 'use strict';
 
-var userName = prompt('Welcome to my site, what\'s your name?');
+var userName = '';
 
-var mountains = prompt('Does Aaron like to climb mountains?');
-
-if(mountains === 'yes' || mountains === 'ya'){
-    alert('Nice job, I love climbing mountains');
-} else if(mountains === 'no'){
-    alert('no way, I love them!');
-} else {
-    alert('Come on, answer Yes or No');
+while(!userName) {
+    var userName = prompt('What is your name?');
 }
+
+alert('Hello ' + userName + '! We are going to play yes or no game. Please answer yes or no to each of the following questions:');
